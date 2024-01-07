@@ -1,6 +1,5 @@
+import { ContactDialog } from '@/components/ContactDialog';
 import { Header } from '@/components/Header';
-import { Button } from '@/components/ui/button';
-import { EnvelopeClosedIcon } from '@radix-ui/react-icons';
 import Image from 'next/image';
 
 export default function Home() {
@@ -35,10 +34,7 @@ export default function Home() {
 
               <p className='mb-2 font-semibold'>Want to know more?</p>
 
-              <Button className='min-w-36 w-fit text-foreground hover:bg-primary hover:opacity-95'>
-                <EnvelopeClosedIcon className='mr-1 w-4 h-4' />
-                Contact Us
-              </Button>
+              <ContactDialog />
             </div>
           </div>
         </section>
