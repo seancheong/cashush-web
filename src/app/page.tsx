@@ -1,9 +1,48 @@
+import { Header } from '@/components/Header';
 import { Button } from '@/components/ui/button';
+import { EnvelopeClosedIcon } from '@radix-ui/react-icons';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <Button>Learn More</Button>
-    </main>
+    <div>
+      <Header />
+
+      <main className='container'>
+        <section className='flex sm:items-center h-[calc(100vh_-_9rem)]'>
+          <div className='flex flex-col gap-4 sm:flex-row-reverse sm:justify-between'>
+            <div className='relative h-[400px] max-h-full sm:h-[600px] sm:basis-1/2'>
+              <Image
+                src='/images/hero.png'
+                priority={true}
+                fill
+                alt='Hero Image'
+                className='rounded-lg'
+              />
+            </div>
+
+            <div className='flex flex-col sm:basis-1/2'>
+              <h1 className='font-semibold mb-4 text-3xl sm:text-5xl'>
+                Easy & Accessible
+              </h1>
+
+              <p className='mb-4 sm:mb-24 xl:text-xl'>
+                A dynamic lending platform designed to simplify and make
+                accessible lending solutions. Our platform not only empowers
+                users with flexible financial solutions but also fosters a
+                community-driven approach to finance.
+              </p>
+
+              <p className='mb-2 font-semibold'>Want to know more?</p>
+
+              <Button className='min-w-36 w-fit text-foreground hover:bg-primary hover:opacity-95'>
+                <EnvelopeClosedIcon className='mr-1 w-4 h-4' />
+                Contact Us
+              </Button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   );
 }
