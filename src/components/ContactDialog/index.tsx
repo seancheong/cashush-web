@@ -5,7 +5,7 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-  DialogTrigger
+  DialogTrigger,
 } from '@/components/ui/dialog';
 import { EnvelopeClosedIcon } from '@radix-ui/react-icons';
 
@@ -13,15 +13,15 @@ export const ContactDialog = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className='min-w-36 w-fit text-foreground hover:bg-primary hover:opacity-95'>
-          <EnvelopeClosedIcon className='mr-1 w-4 h-4' />
+        <Button className="w-fit min-w-36 text-foreground hover:bg-primary hover:opacity-95">
+          <EnvelopeClosedIcon className="mr-1 h-4 w-4" />
           Contact Us
         </Button>
       </DialogTrigger>
 
-      <DialogContent className='sm:max-w-md'>
+      <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle className='mb-4'>Learn More About Cashush</DialogTitle>
+          <DialogTitle className="mb-4">Learn More About Cashush</DialogTitle>
 
           <DialogDescription>
             As we are in the early stages of our journey, we are currently
@@ -33,7 +33,7 @@ export const ContactDialog = () => {
             you have to{' '}
             <a
               href={`mailto:${process.env.CONTACT_EMAIL}`}
-              className='text-blue-500'
+              className="text-blue-500"
             >
               {process.env.CONTACT_EMAIL}
             </a>
