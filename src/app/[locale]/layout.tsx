@@ -17,11 +17,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params: { locale },
 }: {
   children: React.ReactNode;
+  params: { locale: string };
 }) {
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body
         className={cn(
           'h-full min-h-screen min-w-[360px] bg-background font-sans antialiased',

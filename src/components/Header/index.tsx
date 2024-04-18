@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 import {
@@ -11,40 +12,42 @@ import {
 
 const navItems = [
   {
-    title: 'Home',
+    title: 'home',
     href: '/',
   },
   {
-    title: 'Features',
+    title: 'features',
     href: '/',
   },
   {
-    title: 'FAQs',
+    title: 'faqs',
     href: '/services',
   },
   {
-    title: 'Contact',
+    title: 'contact',
     href: '/contact',
   },
 ] as const;
 
 export const Header = () => {
+  const t = useTranslations('Common');
+
   return (
     <header>
       <nav className="@container flex items-center justify-between px-4 py-4">
         <Link href="/" className="text-heading text-[1.75rem] font-bold">
-          Cashush .
+          {t('brand')}
         </Link>
 
         <ul className="@2xl:flex hidden w-1/3 items-center justify-between">
           {navItems.map((item) => (
             <li key={item.title}>
-              <Link href="/">{item.title}</Link>
+              <Link href="/">{t(`nav.${item.title}`)}</Link>
             </li>
           ))}
         </ul>
 
-        <Button className="@2xl:flex hidden">Get Started</Button>
+        <Button className="@2xl:flex hidden">{t('cta')}</Button>
 
         <div className="@2xl:hidden">
           <DropdownMenu>
@@ -57,7 +60,7 @@ export const Header = () => {
             <DropdownMenuContent align="end">
               {navItems.map((item) => (
                 <DropdownMenuItem key={item.title}>
-                  {item.title}
+                  {t(`nav.${item.title}`)}
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>

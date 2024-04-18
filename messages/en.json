@@ -1,0 +1,19 @@
+{
+  "Common": {
+    "brand": "Cashush .",
+    "nav": {
+      "home": "Home",
+      "features": "Features",
+      "faqs": "FAQs",
+      "contact": "Contact"
+    },
+    "cta": "Get Started"
+  },
+  "Home": {
+    "hero": {
+      "title": "Master Your Finances with Easy and Accessible App",
+      "subtitle": "A dynamic lending platform designed to simplify and make accessible lending solutions. Our platform not only empowers users with flexible financial solutions but also fosters a community-driven approach to finance.",
+      "cta": "Get Started"
+    }
+  }
+}
