@@ -33,8 +33,8 @@ export const Header = () => {
   const t = useTranslations('Common');
 
   return (
-    <header>
-      <nav className="@container flex items-center justify-between px-4 py-4">
+    <header className="@container mb-6 border-b-[0.5px] border-neutral-200">
+      <nav className="@md:px-8 flex items-center justify-between px-4 py-4">
         <Link href="/" className="text-heading text-[1.75rem] font-bold">
           {t('brand')}
         </Link>

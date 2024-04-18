@@ -26,11 +26,13 @@ export default function RootLayout({
     <html lang={locale}>
       <body
         className={cn(
-          'h-full min-h-screen min-w-[360px] bg-background font-sans antialiased',
+          'h-full min-h-screen bg-background font-sans antialiased',
           fontSans.variable,
         )}
       >
-        {children}
+        <div className="ml-auto mr-auto min-w-[360px] max-w-screen-2xl">
+          {children}
+        </div>
         <SpeedInsights />
       </body>
     </html>

@@ -2,10 +2,14 @@ import { ContactDialog } from '@/components/ContactDialog';
 import { Header } from '@/components/Header';
 import Image from 'next/image';
 
+import { Hero } from './Hero';
+
 export default function Home() {
   return (
     <div>
       <Header />
+
+      <Hero />
 
       <main className="container">
         <section className="flex h-[calc(100vh_-_9rem)] sm:items-center">
