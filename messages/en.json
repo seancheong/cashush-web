@@ -15,6 +15,49 @@
       "subtitle": "A dynamic lending platform designed to simplify and make accessible lending solutions. Our platform not only empowers users with flexible financial solutions but also fosters a community-driven approach to finance.",
       "cta": "Get Started",
       "image": "Hero Image"
+    },
+    "features": {
+      "section": "Features",
+      "title": "Discover the Power of New P2P Platform",
+      "subtitle": "Find out our awesome features below",
+      "content1": {
+        "title": "Involve yourself through its P2P platform",
+        "description": "You can participate in a financial ecosystem as both borrowers and lenders. This inclusion can be a stepping stone to greater financial literacy and independence."
+      },
+      "content2": {
+        "title": "Explore an alternative service to conventional banking",
+        "description": "We provide a more accessible financial service to wider audience, including those traditionally underserved by banks"
+      },
+      "content3": {
+        "title": "Enjoy a more competitive and fair interest rates",
+        "description": "Enjoy a more competitive and fair interest rates through our P2P platform, giving borrowers a more affordable alternative to informal lenders."
+      },
+      "content4": {
+        "title": "Simplify loan approval process"
+      },
+      "content5": {
+        "title": "Manage finances easily on-the-go"
+      },
+      "tryout": {
+        "title": "Check out our app",
+        "button": "Download App",
+        "comingSoon": "Coming Soon"
+      }
+    },
+    "contact": {
+      "title": "Stay ahead of the curve with the latest updates",
+      "subtitle": "Unlock awesome opportunities by participating in a whole new financial platform",
+      "form": {
+        "label": "Keep in touch! Enter your email below",
+        "placeholder": "Enter email...",
+        "button": "Submit",
+        "error": "Please enter a valid email address"
+      },
+      "icons": {
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "linkedin": "LinkedIn"
+      }
     }
   }
 }

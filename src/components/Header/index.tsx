@@ -33,13 +33,13 @@ export const Header = () => {
   const t = useTranslations('Common');
 
   return (
-    <header className="mb-6 border-b-[0.5px] border-neutral-200 @container">
-      <nav className="flex items-center justify-between px-4 py-4 @md:px-8">
+    <header className="mb-6 border-b-[0.5px] border-neutral-200">
+      <nav className="flex items-center justify-between px-4 py-4 md:px-8">
         <Link href="/" className="text-[1.75rem] font-bold text-heading">
           {t('brand')}
         </Link>
 
-        <ul className="hidden w-1/3 items-center justify-between @2xl:flex">
+        <ul className="hidden w-1/3 items-center justify-between lg:flex">
           {navItems.map((item) => (
             <li key={item.title}>
               <Link href="/">{t(`nav.${item.title}`)}</Link>
@@ -47,9 +47,9 @@ export const Header = () => {
           ))}
         </ul>
 
-        <Button className="hidden @2xl:flex">{t('cta')}</Button>
+        <Button className="hidden lg:flex">{t('cta')}</Button>
 
-        <div className="@2xl:hidden">
+        <div className="lg:hidden">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="icon">

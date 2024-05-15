@@ -86,12 +86,6 @@ module.exports = {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
-      containers: {
-        md: '48rem',
-        lg: '64rem',
-        xl: '80rem',
-        '2xl': '90rem',
-      },
     },
   },
   plugins: [
