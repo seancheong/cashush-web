@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const Hero = () => {
   const t = useTranslations('Home');
@@ -15,7 +16,9 @@ export const Hero = () => {
 
           <p className="mb-10 text-lg">{t('hero.subtitle')}</p>
 
-          <Button className="w-full md:w-fit">{t('hero.cta')}</Button>
+          <Button className="w-full md:w-fit" asChild>
+            <Link href="/#features">{t('hero.start')}</Link>
+          </Button>
         </div>
 
         <div className="relative h-[500px] xl:h-auto xl:w-1/2">

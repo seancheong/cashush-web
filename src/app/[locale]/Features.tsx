@@ -12,7 +12,7 @@ export const Features = () => {
   const t = useTranslations('Home');
 
   return (
-    <section className="mb-16">
+    <section id="features" className="mb-16">
       <div className="mb-8 flex flex-col items-center">
         <Chip label={t('features.section')} className="mb-4" />
 

@@ -8,7 +8,10 @@ export const Contact = () => {
   const t = useTranslations();
 
   return (
-    <section className="mb-16 rounded-lg bg-invert px-6 py-8 text-invert-foreground">
+    <section
+      id="contact"
+      className="mb-16 rounded-lg bg-invert px-6 py-8 text-invert-foreground"
+    >
       <TitleIcon iconPath="/icons/mail.svg" className="mb-4" />
 
       <div className="xl:mb-24 xl:flex xl:justify-between xl:gap-32">

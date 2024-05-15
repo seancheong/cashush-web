@@ -1,31 +1,15 @@
 import { Button } from '@/components/ui/button';
-import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from '../ui/dropdown-menu';
-
 const navItems = [
   {
-    title: 'home',
-    href: '/',
-  },
-  {
     title: 'features',
-    href: '/',
-  },
-  {
-    title: 'faqs',
-    href: '/services',
+    href: '/#features',
   },
   {
     title: 'contact',
-    href: '/contact',
+    href: '/#contact',
   },
 ] as const;
 
@@ -39,33 +23,21 @@ export const Header = () => {
           {t('brand')}
         </Link>
 
-        <ul className="hidden w-1/3 items-center justify-between lg:flex">
+        <ul className="hidden w-1/3 items-center justify-between md:flex">
           {navItems.map((item) => (
             <li key={item.title}>
-              <Link href="/">{t(`nav.${item.title}`)}</Link>
+              <Link href={item.href}>{t(`nav.${item.title}`)}</Link>
             </li>
           ))}
         </ul>
 
-        <Button className="hidden lg:flex">{t('cta')}</Button>
+        <Button className="md:hidden" asChild>
+          <Link href="/#contact">{t('buttons.contact')}</Link>
+        </Button>
 
-        <div className="lg:hidden">
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <HamburgerMenuIcon className="h-8 w-8 text-heading" />
-              </Button>
-            </DropdownMenuTrigger>
-
-            <DropdownMenuContent align="end">
-              {navItems.map((item) => (
-                <DropdownMenuItem key={item.title}>
-                  {t(`nav.${item.title}`)}
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
-        </div>
+        <Button className="hidden md:flex" asChild>
+          <Link href="/#features">{t('buttons.start')}</Link>
+        </Button>
       </nav>
     </header>
   );
