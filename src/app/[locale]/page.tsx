@@ -1,6 +1,6 @@
 import { Header } from '@/components/Header';
 
-import { Contact } from './_components/Contract';
+import { Contact } from './_components/Contact';
 import { Features } from './_components/Features';
 import { Hero } from './_components/Hero';
 
