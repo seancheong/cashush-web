@@ -1,4 +1,4 @@
-// 'use-client';
+import { Toaster } from '@/components/ui/sonner';
 import { cn } from '@/lib/utils';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
@@ -34,6 +34,7 @@ export default function RootLayout({
         <div className="ml-auto mr-auto min-w-[360px] max-w-screen-2xl">
           {children}
         </div>
+        <Toaster />
         <SpeedInsights />
       </body>
     </html>

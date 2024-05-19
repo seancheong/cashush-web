@@ -1,9 +1,8 @@
-// 'use client';
 import { Header } from '@/components/Header';
 
-import { Contact } from './Contact';
-import { Features } from './Features';
-import { Hero } from './Hero';
+import { Contact } from './_components/Contract';
+import { Features } from './_components/Features';
+import { Hero } from './_components/Hero';
 
 export default function Home() {
   return (
