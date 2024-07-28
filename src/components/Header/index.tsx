@@ -10,6 +10,10 @@ const navItems = [
     href: '/#features',
   },
   {
+    title: 'faqs',
+    href: '/#faqs',
+  },
+  {
     title: 'contact',
     href: '/#contact',
   },
