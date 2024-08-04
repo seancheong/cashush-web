@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "typegen": "pocketbase-typegen --env ./.env.local --out ./src/db/pocketbase-types.ts"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.0",
@@ -20,10 +21,12 @@
     "clsx": "^2.1.0",
     "drizzle-orm": "^0.30.10",
     "framer-motion": "^11.3.6",
+    "isomorphic-dompurify": "^2.14.0",
     "lucide-react": "^0.307.0",
     "next": "^14.2.1",
     "next-intl": "^3.11.2",
     "next-themes": "^0.3.0",
+    "pocketbase": "^0.21.4",
     "postgres": "^3.4.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -42,6 +45,7 @@
     "eslint": "^8",
     "eslint-config-next": "^14.2.1",
     "eslint-plugin-prettier": "^5.1.3",
+    "pocketbase-typegen": "^1.2.1",
     "postcss": "^8",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
