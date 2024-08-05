@@ -1,7 +1,7 @@
-import { pb } from '../db';
+import { db } from '../db';
 
 export const getFaqs = async () => {
-  return await pb.collection('faqs').getFullList({
+  return await db.collection('faqs').getFullList({
     sort: 'order',
   });
 };

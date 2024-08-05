@@ -28,7 +28,10 @@ export async function subscribeAction(
   }
 
   try {
-    await createSubscriber(data);
+    await createSubscriber({
+      ...data,
+      optIn: true,
+    });
 
     return {
       done: new Date().toString(),

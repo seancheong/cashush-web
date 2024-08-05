@@ -8,7 +8,7 @@ import { useEffect, useRef } from 'react';
 import { useFormState, useFormStatus } from 'react-dom';
 import { toast } from 'sonner';
 
-import { subscribeAction } from '../../_actions/subscribeAction';
+import { subscribeAction } from '../../actions/subscribeAction';
 
 const initialFormState = {
   done: '',

@@ -6,6 +6,7 @@ import type { RecordService } from 'pocketbase';
 
 export enum Collections {
   Faqs = 'faqs',
+  Subscribers = 'subscribers',
   Users = 'users',
 }
 
@@ -39,6 +40,11 @@ export type FaqsRecord = {
   question: string;
 };
 
+export type SubscribersRecord = {
+  email: string;
+  optIn?: boolean;
+};
+
 export type UsersRecord = {
   avatar?: string;
   name?: string;
@@ -47,6 +53,8 @@ export type UsersRecord = {
 // Response types include system fields and match responses from the PocketBase API
 export type FaqsResponse<Texpand = unknown> = Required<FaqsRecord> &
   BaseSystemFields<Texpand>;
+export type SubscribersResponse<Texpand = unknown> =
+  Required<SubscribersRecord> & BaseSystemFields<Texpand>;
 export type UsersResponse<Texpand = unknown> = Required<UsersRecord> &
   AuthSystemFields<Texpand>;
 
@@ -54,11 +62,13 @@ export type UsersResponse<Texpand = unknown> = Required<UsersRecord> &
 
 export type CollectionRecords = {
   faqs: FaqsRecord;
+  subscribers: SubscribersRecord;
   users: UsersRecord;
 };
 
 export type CollectionResponses = {
   faqs: FaqsResponse;
+  subscribers: SubscribersResponse;
   users: UsersResponse;
 };
 
@@ -67,5 +77,6 @@ export type CollectionResponses = {
 
 export type TypedPocketBase = PocketBase & {
   collection(idOrName: 'faqs'): RecordService<FaqsResponse>;
+  collection(idOrName: 'subscribers'): RecordService<SubscribersResponse>;
   collection(idOrName: 'users'): RecordService<UsersResponse>;
 };
