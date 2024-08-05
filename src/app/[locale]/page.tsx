@@ -1,9 +1,9 @@
 import { Header } from '@/components/Header';
 
-import { Contact } from './_components/Contact';
-import { FAQ } from './_components/FAQ';
-import { Features } from './_components/Features';
-import { Hero } from './_components/Hero';
+import { Contact } from './components/Contact';
+import { FAQ } from './components/FAQ';
+import { Features } from './components/Features';
+import { Hero } from './components/Hero';
 
 export default function Home() {
   return (
