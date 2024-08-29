@@ -12,9 +12,34 @@ const fontSans = FontSans({
   variable: '--font-sans',
 });
 
+const title = 'Cashush';
+const description = 'Landing page for Cashush';
+
 export const metadata: Metadata = {
-  title: 'Cashush',
-  description: 'Landing page for Cashush',
+  title,
+  description,
+  keywords: 'Cashush, Fintech, Finance, P2P Lending Service',
+  authors: [
+    { name: 'Sean Cheong Zhen Xiong', url: 'https://github.com/seancheong' },
+  ],
+  metadataBase: new URL('https://www.cashush.com'),
+  openGraph: {
+    title,
+    description,
+    url: 'https://www.cashush.com',
+    type: 'website',
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/screenshots/landing.png`,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title,
+    description,
+    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/screenshots/landing.png`],
+  },
 };
 
 export default function RootLayout({
