@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL}/screenshots/landing.png`,
+        url: 'https://www.cashush.com/screenshots/landing.png',
       },
     ],
   },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title,
     description,
-    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/screenshots/landing.png`],
+    images: ['https://www.cashush.com/screenshots/landing.png'],
   },
 };
 
