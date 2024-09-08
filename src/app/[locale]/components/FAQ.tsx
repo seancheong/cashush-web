@@ -36,7 +36,7 @@ export function FAQ() {
         <Accordion type="single" collapsible>
           {faqs.map((faq) => (
             <AccordionItem key={faq.id} value={faq.id}>
-              <AccordionTrigger>
+              <AccordionTrigger className="text-left">
                 {faq[`question_${currentLocale}`]}
               </AccordionTrigger>
 
