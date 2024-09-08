@@ -7,12 +7,14 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { getFaqs } from '@/db/queries/faqsQueries';
+import { locales } from '@/i18n/routing';
 import DOMPurify from 'isomorphic-dompurify';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { use } from 'react';
 
 export function FAQ() {
   const t = useTranslations('Home');
+  const currentLocale = useLocale() as (typeof locales)[number];
 
   const faqs = use(getFaqs());
 
@@ -34,12 +36,14 @@ export function FAQ() {
         <Accordion type="single" collapsible>
           {faqs.map((faq) => (
             <AccordionItem key={faq.id} value={faq.id}>
-              <AccordionTrigger>{faq.question}</AccordionTrigger>
+              <AccordionTrigger>
+                {faq[`question_${currentLocale}`]}
+              </AccordionTrigger>
 
               <AccordionContent className="[&_ul]:list-disc [&_ul]:ps-10">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: DOMPurify.sanitize(faq.answer),
+                    __html: DOMPurify.sanitize(faq[`answer_${currentLocale}`]),
                   }}
                 />
               </AccordionContent>
