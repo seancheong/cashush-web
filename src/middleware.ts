@@ -1,22 +1,17 @@
 import createMiddleware from 'next-intl/middleware';
 
-import { localePrefix, locales, pathnames } from './config';
+import { routing } from './i18n/routing';
 
-export default createMiddleware({
-  // list of all locales that are supported
-  locales,
-
-  // used when no locale matches
-  defaultLocale: 'en',
-  pathnames,
-  localePrefix,
-});
+export default createMiddleware(routing);
 
 export const config = {
   // match only internationalized pathnames
   matcher: [
     '/',
-    '/en/:path*',
+
+    // have to hardcode the locales here,
+    // as Nextjs does not allows config to contains template literals
+    `/(en|zh|ms)/:path*`,
 
     // enable redirects that add missing locales
     // (e.g. `/pathnames` -> `/en/pathnames`)

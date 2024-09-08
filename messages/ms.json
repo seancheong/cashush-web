@@ -1,0 +1,79 @@
+{
+  "Common": {
+    "brand": "Cashush .",
+    "nav": {
+      "features": "Ciri-ciri",
+      "faqs": "Soalan Lazim",
+      "contact": "Hubungi"
+    },
+    "buttons": {
+      "start": "Mula Sekarang",
+      "contact": "Hubungi Kami"
+    },
+    "locales": {
+      "en": "Bahasa Inggeris",
+      "zh": "Bahasa Cina",
+      "ms": "Bahasa Melayu"
+    }
+  },
+  "Home": {
+    "hero": {
+      "title": "Urus Kewangan Anda dengan Aplikasi Mudah & Mesra Pengguna",
+      "subtitle": "Platform pinjaman dinamik yang memudahkan urusan pinjaman. Platform kami bukan sahaja menawarkan penyelesaian kewangan yang fleksibel, malah menggalakkan pendekatan kewangan berasaskan komuniti.",
+      "start": "Mula Sekarang",
+      "image": "Imej Utama"
+    },
+    "features": {
+      "section": "Ciri-ciri",
+      "title": "Kuasa Platform P2P Baharu",
+      "subtitle": "Lihat ciri-ciri hebat yang kami tawarkan",
+      "content1": {
+        "title": "Sertai platform P2P kami",
+        "description": "Anda boleh menyertai ekosistem kewangan sebagai peminjam atau pemberi pinjaman. Penglibatan ini boleh membantu anda meningkatkan pengetahuan kewangan dan mencapai kebebasan kewangan."
+      },
+      "content2": {
+        "title": "Alternatif kepada perbankan konvensional",
+        "description": "Kami menawarkan perkhidmatan kewangan yang lebih mudah diakses kepada khalayak yang lebih luas, termasuk mereka yang kurang mendapat perkhidmatan bank secara tradisional."
+      },
+      "content3": {
+        "title": "Nikmati kadar faedah yang lebih kompetitif dan adil",
+        "description": "Nikmati kadar faedah yang lebih kompetitif dan adil melalui platform P2P kami, memberikan peminjam pilihan yang lebih berpatutan berbanding pemberi pinjaman tidak formal."
+      },
+      "content4": {
+        "title": "Proses kelulusan pinjaman yang mudah"
+      },
+      "content5": {
+        "title": "Urus kewangan dengan mudah di mana-mana sahaja"
+      },
+      "tryout": {
+        "title": "Cuba aplikasi kami",
+        "button": "Muat Turun Aplikasi",
+        "comingSoon": "Akan Datang"
+      }
+    },
+    "faqs": {
+      "section": "Sokongan",
+      "title": "Soalan Lazim",
+      "subtitle": "Ada soalan? Semak Soalan Lazim kami"
+    },
+    "contact": {
+      "title": "Dapatkan maklumat terkini",
+      "subtitle": "Rebut peluang dengan menyertai platform kewangan yang terbaru",
+      "form": {
+        "label": "Dapatkan maklumat terkini! Masukkan e-mel anda di bawah",
+        "placeholder": "Masukkan e-mel anda...",
+        "button": "Langgan",
+        "errors": {
+          "invalid": "Sila masukkan alamat e-mel yang sah",
+          "unknown": "Gagal melanggan. Sila cuba lagi."
+        },
+        "success": "Terima kasih kerana melanggan!"
+      },
+      "icons": {
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "linkedin": "LinkedIn"
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "Common": {
+    "brand": "Cashush .",
+    "nav": {
+      "features": "功能介绍",
+      "faqs": "常见问题",
+      "contact": "联系我们"
+    },
+    "buttons": {
+      "start": "开始使用",
+      "contact": "联系我们"
+    },
+    "locales": {
+      "en": "英语",
+      "zh": "中文",
+      "ms": "马来语"
+    }
+  },
+  "Home": {
+    "hero": {
+      "title": "轻松掌控您的财务，简单易用的应用",
+      "subtitle": "一个动态的借贷平台，旨在简化和提供便捷的借贷解决方案。我们的平台不仅为用户提供灵活的金融解决方案，还促进了以社区为导向的金融方式。",
+      "start": "开始使用",
+      "image": "主图"
+    },
+    "features": {
+      "section": "功能介绍",
+      "title": "探索全新P2P平台的力量",
+      "subtitle": "了解我们下面的精彩功能",
+      "content1": {
+        "title": "通过P2P平台参与其中",
+        "description": "您可以作为借款人和贷款人参与到金融生态系统中。这种参与可以成为提高金融素养和独立性的垫脚石。"
+      },
+      "content2": {
+        "title": "探索传统银行的替代服务",
+        "description": "我们为更广泛的受众提供更便捷的金融服务，包括那些传统上未被银行服务覆盖的人群。"
+      },
+      "content3": {
+        "title": "享受更具竞争力和公平的利率",
+        "description": "通过我们的P2P平台，享受更具竞争力和公平的利率，为借款人提供比非正式贷款人更实惠的选择。"
+      },
+      "content4": {
+        "title": "简化贷款审批流程"
+      },
+      "content5": {
+        "title": "随时随地轻松管理财务"
+      },
+      "tryout": {
+        "title": "查看我们的应用",
+        "button": "下载应用",
+        "comingSoon": "即将推出"
+      }
+    },
+    "faqs": {
+      "section": "支持",
+      "title": "常见问题",
+      "subtitle": "有问题吗？查看我们的常见问题"
+    },
+    "contact": {
+      "title": "紧跟最新动态，保持领先",
+      "subtitle": "通过参与全新的金融平台，解锁精彩机会",
+      "form": {
+        "label": "保持联系！在下方输入您的电子邮件",
+        "placeholder": "输入电子邮件...",
+        "button": "订阅",
+        "errors": {
+          "invalid": "请输入有效的电子邮件地址",
+          "unknown": "订阅失败。请再试一次。"
+        },
+        "success": "感谢您的订阅！"
+      },
+      "icons": {
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "linkedin": "LinkedIn"
+      }
+    }
+  }
+}

@@ -9,6 +9,11 @@
     "buttons": {
       "start": "Get Started",
       "contact": "Contact Us"
+    },
+    "locales": {
+      "en": "English",
+      "zh": "Chinese",
+      "ms": "Malay"
     }
   },
   "Home": {
