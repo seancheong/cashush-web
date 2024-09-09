@@ -36,8 +36,14 @@ export type AuthSystemFields<T = never> = {
 
 export type FaqsRecord = {
   answer: HTMLString;
+  answer_en: HTMLString;
+  answer_ms: HTMLString;
+  answer_zh: HTMLString;
   order: number;
   question: string;
+  question_en: string;
+  question_ms: string;
+  question_zh: string;
 };
 
 export type SubscribersRecord = {

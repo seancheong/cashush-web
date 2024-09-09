@@ -3,6 +3,8 @@ import { cn } from '@/lib/utils';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
 import { Inter as FontSans } from 'next/font/google';
 
 import './globals.css';
@@ -42,13 +44,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params: { locale },
 }: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  const messages = await getMessages();
+
   return (
     <html lang={locale}>
       <body
@@ -57,10 +61,12 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
-        <div className="ml-auto mr-auto min-w-[360px] max-w-screen-2xl">
-          {children}
-          <Analytics />
-        </div>
+        <NextIntlClientProvider messages={messages}>
+          <div className="ml-auto mr-auto min-w-[360px] max-w-screen-2xl">
+            {children}
+            <Analytics />
+          </div>
+        </NextIntlClientProvider>
         <Toaster />
         <SpeedInsights />
       </body>

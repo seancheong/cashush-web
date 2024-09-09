@@ -1,7 +1,7 @@
-import { Button } from '@/components/ui/button';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
+import { LocaleSelection } from '../LocaleSelection';
 import { Reveal } from '../Reveal';
 
 const navItems = [
@@ -38,13 +38,7 @@ export const Header = () => {
             ))}
           </ul>
 
-          <Button className="md:hidden" asChild>
-            <Link href="/#contact">{t('buttons.contact')}</Link>
-          </Button>
-
-          <Button className="hidden md:flex" asChild>
-            <Link href="/#features">{t('buttons.start')}</Link>
-          </Button>
+          <LocaleSelection />
         </nav>
       </header>
     </Reveal>
