@@ -16,6 +16,14 @@
       "ms": "Malay"
     }
   },
+  "Error": {
+    "title": "Oops! Something went wrong",
+    "description": "We apologize for the inconvenience. Our team has been notified and is working on a solution.",
+    "instruction": "If the problem persists, please contact our support team at <email></email>",
+    "buttons": {
+      "try-again": "Try again"
+    }
+  },
   "Home": {
     "hero": {
       "title": "Master Your Finances with Easy & Accessible App",

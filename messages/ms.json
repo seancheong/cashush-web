@@ -16,6 +16,14 @@
       "ms": "Bahasa Melayu"
     }
   },
+  "Error": {
+    "title": "Oops! Ada masalah",
+    "description": "Kami memohon maaf atas kesulitan ini. Pasukan kami telah diberitahu dan sedang berusaha mencari penyelesaian.",
+    "instruction": "Jika masalah berterusan, sila hubungi pasukan sokongan kami di <email></email>",
+    "buttons": {
+      "try-again": "Cuba lagi"
+    }
+  },
   "Home": {
     "hero": {
       "title": "Urus Kewangan Anda dengan Aplikasi Mudah & Mesra Pengguna",
