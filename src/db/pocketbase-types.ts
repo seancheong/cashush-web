@@ -35,12 +35,10 @@ export type AuthSystemFields<T = never> = {
 // Record types for each collection
 
 export type FaqsRecord = {
-  answer: HTMLString;
   answer_en: HTMLString;
   answer_ms: HTMLString;
   answer_zh: HTMLString;
   order: number;
-  question: string;
   question_en: string;
   question_ms: string;
   question_zh: string;
