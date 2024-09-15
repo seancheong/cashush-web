@@ -6,11 +6,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { getFaqs } from '@/db/queries/faqsQueries';
 import { locales } from '@/i18n/routing';
 import DOMPurify from 'isomorphic-dompurify';
 import { useLocale, useTranslations } from 'next-intl';
 import { use } from 'react';
+
+import { getFaqs } from '../services/faqService';
 
 export function FAQ() {
   const t = useTranslations('Home');
