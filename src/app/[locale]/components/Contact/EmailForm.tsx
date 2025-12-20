@@ -4,8 +4,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@radix-ui/react-label';
 import { useTranslations } from 'next-intl';
-import { useEffect, useRef } from 'react';
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState, useEffect, useRef } from 'react';
+import { useFormStatus } from 'react-dom';
 import { toast } from 'sonner';
 
 import { subscribeAction } from '../../actions/subscribeAction';
@@ -18,7 +18,7 @@ const initialFormState = {
 export const EmailForm = () => {
   const t = useTranslations('Home');
 
-  const [state, formAction] = useFormState(subscribeAction, initialFormState);
+  const [state, formAction] = useActionState(subscribeAction, initialFormState);
   const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
