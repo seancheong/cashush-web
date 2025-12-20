@@ -2,7 +2,8 @@ import { Reveal } from '@/components/Reveal';
 import { Button } from '@/components/ui/button';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import Link from 'next/link';
+
+import { Link } from '../../../i18n/routing';
 
 export const Hero = () => {
   const t = useTranslations('Home');
